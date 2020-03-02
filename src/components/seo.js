@@ -68,6 +68,36 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
       ].concat(meta)}
+      link={[
+        {
+          href: `https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css`,
+          rel: `stylesheet`,
+        },
+        {
+          href: `https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css`,
+          rel: `stylesheet`,
+        },
+        {
+          href: `https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css`,
+          rel: `stylesheet`,
+        },
+        {
+          href: `https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.0.0/css/ionicons.min.css`,
+          rel: `stylesheet`,
+        },
+        {
+          href: `https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css`,
+          rel: `stylesheet`,
+        },
+        {
+          href: `https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js`,
+          rel: `stylesheet`,
+        },
+        {
+          href: `https://use.typekit.net/ooe7wpt.css`,
+          rel: `stylesheet`,
+        },
+      ]}
     />
   )
 }
