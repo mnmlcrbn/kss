@@ -82,7 +82,7 @@ function SEO({ description, lang, meta, title }) {
           rel: `stylesheet`,
         },
         {
-          href: `https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.0.0/css/ionicons.min.css`,
+          href: `https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.0.0/collection/components/icon/icon.min.css`,
           rel: `stylesheet`,
         },
         {
@@ -90,7 +90,7 @@ function SEO({ description, lang, meta, title }) {
           rel: `stylesheet`,
         },
         {
-          href: `https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js`,
+          href: `https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css`,
           rel: `stylesheet`,
         },
         {
