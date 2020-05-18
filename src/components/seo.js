@@ -71,7 +71,7 @@ function SEO({ description, lang, meta, title }) {
       ].concat(meta)}
       link={[
         {
-          href: withPrefix("/lib/bootstrap/css/bootstrap.min.css"),
+          href: withPrefix("lib/bootstrap/css/bootstrap.min.css"),
           rel: `stylesheet`,
         },
         {
