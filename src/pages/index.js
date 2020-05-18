@@ -40,8 +40,9 @@ const IndexPage = () => (
               <div className="row">
                 <div className="col-md-6 m-auto">
                   <div className="about-me pt-4 pt-md-0">
-                    <div className="title-box-2">
-                      <h5 className="title-left">About Us</h5>
+                    <div className="title-box text-center">
+                      <h5 className="title-a">About Us</h5>
+                      <div className="line-mf"></div>
                     </div>
                     <p className="lead">
                       A license and locally owned business. A household name

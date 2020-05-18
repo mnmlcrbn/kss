@@ -9,6 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
+import { withPrefix } from "gatsby"
 
 function SEO({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
@@ -70,32 +71,78 @@ function SEO({ description, lang, meta, title }) {
       ].concat(meta)}
       link={[
         {
-          href: `https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css`,
+          href: withPrefix("/lib/bootstrap/css/bootstrap.min.css"),
           rel: `stylesheet`,
         },
         {
-          href: `https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css`,
+          href: withPrefix("lib/font-awesome/css/font-awesome.min.css"),
           rel: `stylesheet`,
         },
         {
-          href: `https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css`,
+          href: withPrefix("lib/animate/animate.min.css"),
           rel: `stylesheet`,
         },
         {
-          href: `https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.0.0/collection/components/icon/icon.min.css`,
+          href: withPrefix("lib/ionicons/css/ionicons.min.css"),
           rel: `stylesheet`,
         },
         {
-          href: `https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css`,
+          href: withPrefix("lib/owlcarousel/assets/owl.carousel.min.css"),
           rel: `stylesheet`,
         },
         {
-          href: `https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css`,
+          href: withPrefix("lib/lightbox/css/lightbox.min.css"),
           rel: `stylesheet`,
         },
+      ]}
+      script={[
         {
-          href: `https://use.typekit.net/ooe7wpt.css`,
-          rel: `stylesheet`,
+          src: `https://code.jquery.com/jquery-3.5.1.min.js`,
+          rel: `script`,
+        },
+        {
+          src: withPrefix("lib/jquery/jquery-migrate.min.js"),
+          rel: `script`,
+        },
+        {
+          src: withPrefix("lib/popper/popper.min.js"),
+          rel: `script`,
+        },
+        {
+          src: withPrefix("lib/bootstrap/js/bootstrap.min.js"),
+          rel: `script`,
+        },
+        {
+          src: withPrefix("lib/easing/easing.min.js"),
+          rel: `script`,
+        },
+        {
+          src: withPrefix("lib/counterup/jquery.waypoints.min.js"),
+          rel: `script`,
+        },
+        {
+          src: withPrefix("lib/counterup/jquery.counterup.js"),
+          rel: `script`,
+        },
+        {
+          src: withPrefix("lib/owlcarousel/owl.carousel.min.js"),
+          rel: `script`,
+        },
+        {
+          src: withPrefix("lib/lightbox/js/lightbox.min.js"),
+          rel: `script`,
+        },
+        {
+          src: withPrefix("lib/typed/typed.min.js"),
+          rel: `script`,
+        },
+        {
+          src: withPrefix("contactform/contactform.js"),
+          rel: `script`,
+        },
+        {
+          src: withPrefix("js/main.js"),
+          rel: `script`,
         },
       ]}
     />
